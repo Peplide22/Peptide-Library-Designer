@@ -1,0 +1,188 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+.progress{
+	margin: 0;
+}
+
+.progress-bar{
+	background-color: #9b60db;
+	font-family:'Open Sans', sans-serif;
+    font-size:14px;
+}
+
+#status{
+	margin: 1px 0;
+	font-weight: bold;
+}
+
+#progress-value{
+	margin-left: 5px;
+}
+
+table.scrolldown {
+	width: 75%;
+	margin: auto;	  
+	/* border-collapse: collapse; */
+	border-spacing: 0;
+	/* border: 2px solid black; */
+}
+  
+/* To display the block as level element */
+table.scrolldown tbody, table.scrolldown thead {
+	display: block;
+} 
+  
+thead tr th {
+	height: 40px; 
+	line-height: 40px;
+}
+  
+table.scrolldown tbody {
+	  
+	/* Set the height of table body */
+	height: 50px; 
+	  
+	/* Set vertical scroll */
+	overflow-y: auto;
+	  
+	/* Hide the horizontal scroll */
+	overflow-x: hidden; 
+}
+  
+/* tbody { 
+	border-top: 2px solid black;
+} */
+  
+td, th {
+	width : 200px;
+	/* border-right: 2px solid black; */
+}
+td {
+	padding: 2px;
+	text-align:center;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px rgb(224, 224, 224); 
+	border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #9b60db; 
+	border-radius: 5px;
+  }
+
+  
+/* End Table */
+
+
+.uploader {
+	 display: block;
+	 clear: both;
+	 margin: 0 auto;
+	 width: 100%;
+	 max-width: 600px;
+}
+.uploader label {
+	 float: left;
+	 clear: both;
+	 width: 100%;
+	 padding: 2rem 1.5rem;
+	 text-align: center;
+	 background: #fff;
+	 border-radius: 7px;
+	 border: 3px solid #eee;
+	 transition: all 0.2s ease;
+	 user-select: none;
+}
+
+.uploader label:hover {
+	 border-color: #9b60db;
+}
+ .uploader label.hover {
+	 border: 3px solid #9b60db;
+	 box-shadow: inset 0 0 0 6px #eee;
+}
+ .uploader label.hover #start i.fa {
+	 transform: scale(0.8);
+	 opacity: 0.3;
+}
+ .uploader #start {
+	 float: left;
+	 clear: both;
+	 width: 100%;
+}
+ .uploader #start.hidden {
+	 display: none;
+}
+ .uploader #start i.fa {
+	 font-size: 50px;
+	 margin-bottom: 1rem;
+	 transition: all 0.2s ease-in-out;
+}
+ .uploader #response {
+	 float: left;
+	 clear: both;
+	 width: 100%;
+}
+ .uploader #response.hidden {
+	 display: none;
+}
+ .uploader #response #messages {
+	 margin-bottom: 0.5rem;
+}
+ .uploader #file-image {
+	 display: inline;
+	 margin: 0 auto 0.5rem auto;
+	 width: auto;
+	 height: auto;
+	 max-width: 180px;
+}
+ .uploader #file-image.hidden {
+	 display: none;
+}
+ .uploader #notimage {
+	 display: block;
+	 float: left;
+	 clear: both;
+	 width: 100%;
+}
+ .uploader #notimage.hidden {
+	 display: none;
+}
+
+ .uploader input[type="file"] {
+	 display: none;
+}
+ .uploader div {
+	 margin: 0 0 0.5rem 0;
+	 color: #5f6982;
+}
+ .uploader .btn {
+	 display: inline-block;
+	 margin: 2rem 0.5rem 1rem 0.5rem;
+	 clear: both;
+	 font-family: inherit;
+	 font-weight: 700;
+	 font-size: 14px;
+	 text-decoration: none;
+	 text-transform: initial;
+	 border: none;
+	 border-radius: 0.2rem;
+	 outline: none;
+	 padding: 0 1rem;
+	 height: 36px;
+	 line-height: 36px;
+	 color: #fff;
+	 transition: all 0.2s ease-in-out;
+	 box-sizing: border-box;
+	 background: #9b60db;
+	 border-color: #9b60db;
+	 cursor: pointer;
+}
