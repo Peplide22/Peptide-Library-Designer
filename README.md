@@ -2,7 +2,8 @@ A tool to design inhibitory peptide sequences using crystal complex structure
 
 !! NOT SUITABLE TO RUN ON PRODUCTION SERVER (Optimization Required)
 
-For Cloning a Repository Refer to https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository 
+For Cloning a Repository Refer to 
+  https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository 
 
 -> Goto the <> Code Tab for Cloning Repository 
 
