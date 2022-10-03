@@ -17,8 +17,8 @@ ALLOWED_EXTENSIONS = {'pdb','ent','csv','xlsx','xls'}
 
 # User Input and Output stored in separate directories accessed using UIDs
 
-uid='uid_730/'
-# uid='uid_'+str(random.randint(0,1000))+'/'
+# uid='uid_730/'
+uid='uid_'+str(random.randint(0,1000))+'/'
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = os.path.join(UPLOAD_FOLDER, uid) 
@@ -104,38 +104,38 @@ def upload_details():
                     file.save(file_path)
 
         # # Execution of Content Code
-        # status('Repairing PDBs..',20)   
-        # Complete_PDB.main(uid)
+        status('Repairing PDBs..',20)   
+        Complete_PDB.main(uid)
 
-        # status('Generating Cell List..',20)
+        status('Generating Cell List..',20)
 
-        # Cell_List.segregate(uid)
-        # Cell_List.main("67")
-        # status('Generating Cell List..',30)
-        # Cell_List.main("133")
+        Cell_List.segregate(uid)
+        Cell_List.main("67")
+        status('Generating Cell List..',30)
+        Cell_List.main("133")
             
-        # status('Sorting Files..',40)
-        # Align.main("67",uid)
-        # status('Sorting Files..',50)
+        status('Sorting Files..',40)
+        Align.main("67",uid)
+        status('Sorting Files..',50)
         
-        # Align.main("133",uid)
+        Align.main("133",uid)
 
-        # status('Removing Inter-Spike Pairs..',60)
-        # Remove.main("67",uid)
-        # status('Removing Inter-Spike Pairs..',65)
-        # Remove.main("133",uid)
+        status('Removing Inter-Spike Pairs..',60)
+        Remove.main("67",uid)
+        status('Removing Inter-Spike Pairs..',65)
+        Remove.main("133",uid)
 
-        # status('Extracting Residue Locations..',70)
-        # ResidueLoc.main("67",uid)
+        status('Extracting Residue Locations..',70)
+        ResidueLoc.main("67",uid)
 
-        # status('Extracting Residue Locations..',75)
-        # ResidueLoc.main("133",uid)
+        status('Extracting Residue Locations..',75)
+        ResidueLoc.main("133",uid)
 
-        # status('Extracting Residue Locations..',80)
-        # Peptide_Selection.main(uid)
+        status('Extracting Residue Locations..',80)
+        Peptide_Selection.main(uid)
 
-        # status('Creating Peptide Summary..',85)
-        # Peptide_Summary.main(uid)
+        status('Creating Peptide Summary..',85)
+        Peptide_Summary.main(uid)
 
         status('Building Model..',90)
         Model_Building.main(uid)
