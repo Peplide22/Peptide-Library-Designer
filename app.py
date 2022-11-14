@@ -1,4 +1,4 @@
-import os,random
+import os,random,shutil
 import app.mod1.Complete_PDB as Complete_PDB
 import app.mod2.cell_list.Cell_List as Cell_List
 import app.mod3.Align as Align
@@ -8,8 +8,10 @@ import app.mod6.Peptide_Selection as Peptide_Selection
 import app.mod7.Peptide_Summary as Peptide_Summary
 import app.mod10.Model_Building as Model_Building
 import app.mod10.Split_Chains as Split_Chains
+import app.mod10.Pep_models as Pep_Models
+import app.mod10.Merge_PDB as Merge_PDB
 
-from flask import Flask, render_template, redirect, request, json
+from flask import Flask, render_template, redirect, send_file, request, json
 from werkzeug.utils import secure_filename
 
 UPLOAD_FOLDER = 'uploads'
@@ -17,7 +19,7 @@ ALLOWED_EXTENSIONS = {'pdb','ent','csv','xlsx','xls'}
 
 # User Input and Output stored in separate directories accessed using UIDs
 
-# uid='uid_730/'
+#uid='uid_730/'
 uid='uid_'+str(random.randint(0,1000))+'/'
 
 app = Flask(__name__)
@@ -109,41 +111,52 @@ def upload_details():
 
         status('Generating Cell List..',20)
 
-        Cell_List.segregate(uid)
+        Cell_List.segregate(uid,file_path)
         Cell_List.main("67")
         status('Generating Cell List..',30)
         Cell_List.main("133")
             
         status('Sorting Files..',40)
         Align.main("67",uid)
-        status('Sorting Files..',50)
+        status('Sorting Files..',45)
         
         Align.main("133",uid)
 
-        status('Removing Inter-Spike Pairs..',60)
+        status('Removing Inter-Spike Pairs..',50)
         Remove.main("67",uid)
-        status('Removing Inter-Spike Pairs..',65)
+        status('Removing Inter-Spike Pairs..',55)
         Remove.main("133",uid)
 
-        status('Extracting Residue Locations..',70)
+        status('Extracting Residue Locations..',60)
         ResidueLoc.main("67",uid)
 
-        status('Extracting Residue Locations..',75)
+        status('Extracting Residue Locations..',65)
         ResidueLoc.main("133",uid)
 
-        status('Extracting Residue Locations..',80)
+        status('Extracting Residue Locations..',70)
         Peptide_Selection.main(uid)
 
-        status('Creating Peptide Summary..',85)
+        status('Creating Peptide Summary..',75)
         Peptide_Summary.main(uid)
 
-        status('Building Model..',90)
+        status('Building Model..',80)
         Model_Building.main(uid)
 
-        status('Splitting Chains..',95)
+        status('Splitting Chains..',85)
         Split_Chains.main(uid)
         
+        status('Generating Peptide Models..',90)
+        Pep_Models.main(uid)
+
+        status('Merging PDBs..',95)
+        Merge_PDB.main(uid)
+
         status('Done',100)
+
+        output_dir=os.path.join("output/10.0/",uid) 
+
+        shutil.make_archive(output_dir+'Output_Files','zip', output_dir+'Output_Files/')
+        return send_file(output_dir+'Output_Files.zip',mimetype = 'zip',as_attachment = True)
 
     return redirect('/')
         

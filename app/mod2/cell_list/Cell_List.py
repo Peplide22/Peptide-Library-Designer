@@ -5,15 +5,13 @@ import time
 input_dir="output/1.0/"
 root_dir="output/2.0/"
 
-def segregate(uid):
+def segregate(uid,file_path):
 
     global input_dir,root_dir
     input_dir=os.path.join(input_dir,uid)
     root_dir=os.path.join(root_dir,uid)
 
-    path = "uploads/212_Chain_details.xlsx"
-
-    wb = openpyxl.load_workbook(path)
+    wb = openpyxl.load_workbook(file_path)
     sheet = wb.active
 
     if(os.path.exists(root_dir+"PDB_67.txt")):
