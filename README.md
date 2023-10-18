@@ -27,4 +27,6 @@ For Cloning a Repository Refer to
        python app.py  
 -> By default application will run on the development server at 127.0.0.1:5000
 
-Upload the pbds in example folder to reproduce the results discussed in the paper.
+Remark: Please be aware that the current iteration of this tool is tailored exclusively for designing peptides targeting the SARS-CoV-2 spike protein. Extending its applicability to other proteins is currently in progress. 
+
+To replicate the results detailed in the paper, kindly upload the provided pbds files located in the example folder.
