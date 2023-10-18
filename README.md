@@ -30,3 +30,5 @@ For Cloning a Repository Refer to
 Remark: Please be aware that the current iteration of this tool is tailored exclusively for designing peptides targeting the SARS-CoV-2 spike protein. Extending its applicability to other proteins is currently in progress. 
 
 To replicate the results detailed in the paper, kindly upload the provided pbds files located in the example folder.
+
+Special thanks to Chirag Nawale for compiling the scripts into this user-friendly tool :)
