@@ -1,6 +1,6 @@
 A tool to design inhibitory peptide sequences using crystal complex structure
 
-!! NOT SUITABLE TO RUN ON PRODUCTION SERVER (Optimization Required)
+*NOT SUITABLE TO RUN ON PRODUCTION SERVER (Optimization Required)*
 
 For Cloning a Repository Refer to 
   https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository 
@@ -21,6 +21,7 @@ For Cloning a Repository Refer to
   -> Enter Any Login Credentials if asked  
   END Method 2
     
+
 -> After Cloning the Repository goto Project Working Directory  
 -> Run app.py (Click on the http link shown in the IDLE or CMD)  
      On CMD Command  
@@ -29,6 +30,6 @@ For Cloning a Repository Refer to
 
 Remark: Please be aware that the current iteration of this tool is tailored exclusively for designing peptides targeting the SARS-CoV-2 spike protein. Extending its applicability to other proteins is currently in progress. 
 
-To replicate the results detailed in the paper, kindly upload the provided pbds files located in the example folder.
+To test the pipeline described in the paper, kindly upload the provided pbds files located in the Peplide_Demofiles directory.
 
 Special thanks to Chirag Nawale for compiling the scripts into this user-friendly tool :)
