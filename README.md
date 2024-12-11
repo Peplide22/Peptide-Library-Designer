@@ -47,6 +47,6 @@ For Cloning a Repository Refer to
 
 Remark: Please be aware that the current iteration of this tool is tailored exclusively for designing peptides targeting the SARS-CoV-2 spike protein. Extending its applicability to other proteins is currently in progress. 
 
-To test the pipeline described in the paper, kindly upload the provided pbds files located in the Peplide_Demofiles directory.
+To test the pipeline described in the paper, kindly upload the provided pbd files located in the Peplide_Demofiles directory.
 
 Special thanks to Chirag Nawale for compiling the scripts into this user-friendly tool :)
