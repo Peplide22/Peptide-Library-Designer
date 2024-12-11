@@ -1,4 +1,4 @@
-A compiled package to design inhibitory peptide sequences using crystal complex structure.
+A compiled package to design peptide binders using experimentally solved protein complex structure.
 
 *NOT SUITABLE TO RUN ON PRODUCTION SERVER (Optimization Required)*
 
