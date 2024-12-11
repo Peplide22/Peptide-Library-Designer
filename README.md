@@ -1,5 +1,22 @@
-A compiled package to design peptide binders using experimentally solved protein complex structure.
+Peplide - A compiled package to design peptide binders using experimentally solved protein complex structure.
 
+***********************
+Copyright Information
+***********************
+Copyright (C) 2013 Avadhoot Jadhav <avadhoot.jadhav@students.iiserpune.ac.in>
+This file is part of Peplide.
+
+Peplide is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+Peplide is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with Peplide.  If not, see <http://www.gnu.org/licenses/>.
+
+Licenses
+- GNU Project - Free Software Foundation
+http://www.gnu.org
+
+***********************
 *NOT SUITABLE TO RUN ON PRODUCTION SERVER (Optimization Required)*
 
 For Cloning a Repository Refer to 
