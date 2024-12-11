@@ -25,7 +25,7 @@ For Cloning a Repository Refer to
 -> Goto the <> Code Tab for Cloning Repository 
 
   Method 1  
-  -> Click the Code Button and Download Zip FOlder of the Project  
+  -> Click the Code Button and Download Zip Folder of the Project  
   -> Unzip the Project in your Working Directory  
   END Method 1
   
