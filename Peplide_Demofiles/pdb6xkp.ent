@@ -35,6 +35,8 @@ KEYWDS    SARS-COV-2, ANTIBODY, SPIKE, CORONAVIRUS, COVID-19, IMMUNE SYSTEM,
 KEYWDS   2 VIRAL PROTEIN-IMMUNE SYSTEM COMPLEX                                  
 EXPDTA    X-RAY DIFFRACTION                                                     
 AUTHOR    H.LIU,M.YUAN,X.ZHU,N.C.WU,I.A.WILSON                                  
+REVDAT   5   09-OCT-24 6XKP    1       REMARK                                   
+REVDAT   4   18-OCT-23 6XKP    1       REMARK                                   
 REVDAT   3   25-NOV-20 6XKP    1       JRNL                                     
 REVDAT   2   04-NOV-20 6XKP    1       JRNL                                     
 REVDAT   1   14-OCT-20 6XKP    0                                                
