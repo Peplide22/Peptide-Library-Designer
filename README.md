@@ -45,7 +45,9 @@ For Cloning a Repository Refer to
        python app.py  
 -> By default application will run on the development server at 127.0.0.1:5000
 
-Remark: Please be aware that the current iteration of this tool is tailored exclusively for designing peptides targeting the SARS-CoV-2 spike protein. Extending its applicability to other proteins is currently in progress. 
+Remark: 
+1. Please note that the application requires MODELLER 10.1 to be preinstalled for successful execution. MODELLER 10.1 is a licensed software, and a valid license is necessary for its installation and use.(Link:https://salilab.org/modeller/10.1/release.html)
+2. Please be aware that the current iteration of this tool is tailored exclusively for designing peptides targeting the SARS-CoV-2 spike protein. Extending its applicability to other proteins is currently in progress. 
 
 To test the pipeline described in the paper, kindly upload the provided pbd files located in the Peplide_Demofiles directory.
 
