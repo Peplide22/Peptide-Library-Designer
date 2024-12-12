@@ -19,13 +19,9 @@ ALLOWED_EXTENSIONS = {'pdb','ent','csv','xlsx','xls'}
 
 # User Input and Output stored in separate directories accessed using UIDs
 
-<<<<<<< HEAD
-#uid='uid_730/'
-uid='uid_'+str(random.randint(0,1000))+'/'
-=======
 uid='uid_730/'
 # uid='uid_'+str(random.randint(0,1000))+'/'
->>>>>>> 273b76d (initial commit)
+
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = os.path.join(UPLOAD_FOLDER, uid) 
